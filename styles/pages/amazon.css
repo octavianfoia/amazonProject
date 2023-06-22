@@ -5,7 +5,7 @@
 .products-grid {
   display: grid;
 
-  /grid-template-columns: repeat(8, 1fr);
+  grid-template-columns: repeat(8, 1fr);
 }
 
 @media (max-width: 2000px) {
@@ -14,6 +14,8 @@
   }
 }
 
+/* This @media means when the screen width is 1600px or
+   less, we will divide the grid into 6 columns. */
 @media (max-width: 1600px) {
   .products-grid {
     grid-template-columns: repeat(6, 1fr);
